@@ -1,0 +1,78 @@
+
+<app-header></app-header>
+
+<div class="breadcrumb-option contact-breadcrumb set-bg"
+style=" 
+background-image:url('https://preview.colorlib.com/theme/loanday/img/breadcrumb/contact-breadcrumb.jpg');
+">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-12 text-center">
+    <div class="breadcrumb__text">
+    <h2>Nosso Contato</h2>
+    </div>
+    </div> 
+    </div>
+    </div>
+    </div>
+     
+<section class="contact spad">
+    <div class="container">
+    <div class="contact__form">
+    <div class="row">
+    <div class="col-lg-12">
+    <div class="contact__form__text">
+    <div class="contact__form__title">
+    <h2>Fale conosco</h2>
+    <p>Entre em contato conosco ou envie-nos um e-mail.</p>
+    </div>
+    <form action="#"> 
+    <div class="input-list">
+    <input type="text" name="nome" [(ngModel)]="data.nome" style="width: 31%;" placeholder="Seu nome">
+    <input type="text" name="email" [(ngModel)]="data.email" style="width: 31%;" placeholder="Seu email">
+    <input type="text" name="telefone" [(ngModel)]="data.telefone" style="width: 32%;" placeholder="Seu telefone">
+    </div>
+    <textarea name="mensagem" [(ngModel)]="data.mensagem" placeholder="Sua mensagem"></textarea>
+    <button (click)="submitForm()" class="site-btn">Enviar Mensagem</button>
+    </form>
+    </div>
+    </div> 
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="contact__address__item">
+            <h4>SÃO JOSÉ DOS CAMPOS</h4>
+            <ul>
+                <li><i class="fa fa-map-marker"></i> RUA MASSANGUAÇU 166 <br />- CENTRO</li>
+            <li><i class="fa fa-phone"></i> (35) 999999999</li>
+            <li><i class="fa fa-envelope"></i> <a href="" class="__cf_email__" data-cfemail="156274667d7c7b72617a7b3b7c7b737a55767a797a67797c773b767a78">obrazilvalle@gmail.com</a></li>
+            </ul>
+            </div>
+        </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="contact__address__item">
+    <h4>ITAJUBÁ</h4>
+    <ul>
+    <li><i class="fa fa-map-marker"></i> RUA FLAMINIO MIRANDA, 49 <br />- PORTO VELHO</li>
+    <li><i class="fa fa-phone"></i> (35) 984789022</li>
+    <li><i class="fa fa-envelope"></i> <a href="" class="__cf_email__" data-cfemail="f69893819c938485938fd89f989099b695999a99849a9f94d895999b">obrazilvalle@gmail.com</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="contact__address__item">
+        <h4>LAMBARI</h4>
+        <ul>
+            <li><i class="fa fa-map-marker"></i> 171, A.V. DR. JOSÉ NICOLAU MILEU <br />- CENTRO</li>
+            <li><i class="fa fa-phone"></i> (35) 998919045</li>
+        <li><i class="fa fa-envelope"></i> <a href="" class="__cf_email__" data-cfemail="68060d1f11071a034601060e07280b0704071a04010a460b0705">obrazilvalle@gmail.com</a></li>
+        </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <app-subfooter></app-subfooter>
+<app-footer></app-footer>

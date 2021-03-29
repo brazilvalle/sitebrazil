@@ -1,0 +1,54 @@
+<section class="hero set-bg" style=" 
+background-image:url('assets/inicio.jpg');
+">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-6 ">
+    <div class="hero__text">
+    <h2 style="font-size: 14; position: relative; top: -50px">Crédito e financiamento para todos os seus sonhos a uma ligação de distância</h2>
+    
+    <a href="#" class="primary-btn">Sua empresa tem créditos para receber. Consulte-nos!</a>
+    </div>
+    </div> 
+    <div class="col-lg-4 offset-lg-2">
+    <div class="hero__form">
+    <h3>Posso te ajudar?</h3> 
+    <form>
+    <div class="input-list">
+    <div class="input-list-item" >
+    <p>Nome:</p>
+    <input type="text" name="nome" [(ngModel)]="data.nome" >
+    
+    </div>
+    <div class="input-list-item">
+    <p>Telefone:</p>
+    <input type="text" name="telefone" [(ngModel)]="data.telefone" [dropSpecialCharacters]="false" mask="(00) 00000 - 0000">
+    </div>
+    </div>
+    <div class="input-full-width">
+    <p>Email:</p>
+    <input type="email" name="email" [(ngModel)]="data.email">
+    </div>
+    <div class="input-list last">
+    <div class="input-full-width">
+    <p>Valor:</p>
+    <input id="myInput"  name="val" inputmode="numeric" [(ngModel)]="val" (keyup)="send($event)"/>
+     </div>
+    </div>
+    <button (click)="submitForm()" class="primary-btn">Enviar Proposta</button><br>
+    <div *ngIf="sucesso == true">
+        <div class="alert alert-success" id="sucesso" role="alert">
+            Enviado com sucesso
+        </div>
+    </div>
+    <div *ngIf="sucesso == false">
+        <div class="alert alert-danger" id="sucesso" role="alert">
+            Por favor {{resposta}}
+        </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
